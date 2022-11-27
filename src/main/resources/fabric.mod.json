@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "morepets",
+  "version": "${version}",
+
+  "name": "More Pets",
+  "description": "This mod implements more pets into your game! (For Blurry aka Khaos)",
+  "authors": [
+    "YoureAHotFishy"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.youreahotfishy.morepets.Main"
+    ],
+    "client": [
+      "net.youreahotfishy.morepets.MorePetsClient"
+    ]
+  },
+  "mixins": [
+    "morepets.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
